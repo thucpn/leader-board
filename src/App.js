@@ -9,7 +9,7 @@ function App() {
 		async function getData() {
 			const res = await api.get(`/api/users`);
 			if (res.data) {
-				const top5 = res.data.slice(0, 5);
+				const top5 = res.data.slice(0, 3);
 				setData(top5);
 			}
 		}
